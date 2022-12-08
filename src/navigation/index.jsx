@@ -8,7 +8,7 @@ const AppNavigator = () => {
         <NavigationContainer>
             <ShopNavigator />
         </NavigationContainer>
-    )
-}
+    );
+};
 
 export default AppNavigator;

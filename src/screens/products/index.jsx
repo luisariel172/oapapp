@@ -1,8 +1,8 @@
-import React from "react";
-import { View, Text, Button } from "react-native";
-import { colors } from "../../constants/themes/colors";
+import React from 'react';
+import { View, Text, Button } from 'react-native';
+import { COLORS } from '../../constants/themes/colors';
 
-import { styles } from "./styles";
+import { styles } from './styles';
 
 const Products = ({ navigation }) => {
     return (
@@ -10,7 +10,7 @@ const Products = ({ navigation }) => {
             <Text style={styles.title}>Productos</Text>
             <Button
                 title="Ir a Producto"
-                color={colors.primary}
+                color={COLORS.primary}
                 onPress={()=>navigation.navigate('Product')}
             />
         </View>

@@ -1,16 +1,16 @@
-import { StyleSheet } from "react-native";
-import { colors } from "../../constants/themes/colors";
+import { StyleSheet } from 'react-native';
+import { COLORS } from '../../constants/themes/colors';
 
 export const styles = StyleSheet.create({
     container : {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: colors.backgroundOap,
+        backgroundColor: COLORS.backgroundOap,
     },
     title: {
         fontFamily: 'Ubuntu-Bold',
         fontSize: 20,
-        color: colors.text,
+        color: COLORS.text,
     }
 });
