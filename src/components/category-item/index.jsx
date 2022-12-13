@@ -3,7 +3,7 @@ import { View, TouchableOpacity, Text } from 'react-native';
 
 import { styles } from './styles';
 
-const CategoryItem = ({ item, onSelected}) => {
+const CategoryItem = ({ item, onSelected }) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity

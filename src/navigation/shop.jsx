@@ -21,6 +21,8 @@ const ShopNavigator = () => {
                     fontFamily: 'Ubuntu-Bold',
                 } ,
                 presentation: 'card', //solo para IOS
+                //para q en todos los backs que tenga, no salga ningun texto
+                headerBackTitle: '',
             }}
         >
             <Stack.Screen 
@@ -31,10 +33,16 @@ const ShopNavigator = () => {
                 }}
                 />
             <Stack.Screen name="Products" component={Products} 
-                options={{title: 'Productos'}}
+                //route recibe automaticamente los parametros q le paso a traves de los parametros de navegacion
+               //para q funcione de forma dinamica segun el elemento que seleccione
+                options={({ route }) => ({
+                    title: route.params.title,
+                })}
             />
             <Stack.Screen name="Product" component={Product}
-                options={{title: 'Producto detallado'}}
+                options={({route}) => ({
+                    title: route.params.title,
+                })}
             />
         </Stack.Navigator>
     );

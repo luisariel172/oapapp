@@ -6,7 +6,7 @@ export const CATEGORIES = [
     },
     {
         id: 2,
-        title: 'Bandejas',
+        title: 'Bandejas Desayuno',
         color: '#7CFFCB',
     },
     {
