@@ -7,7 +7,7 @@ const Orders = ({ navigation }) => {
     const onDelete = (id) => {
         console.warn('Delete', id);
     };
-    const renderItem = ({ item }) => <OrderItem item={item} onDelete={onDelete}
+    const renderItem = ({ item }) => <OrderItem item={item} onDelete={onDelete}/>
     return (
         <View style={styles.container}>
             <FlatList 

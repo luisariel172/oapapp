@@ -20,7 +20,7 @@ const OrderItem = ({ item, onDelete}) => {
                     <Ionicons
                         name="trash"
                         size={24}
-                        color= {COLORS.backgroundDark} />
+                        color= {COLORS.text} />
                 </TouchableOpacity>
             </View>
         </View>
